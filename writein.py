@@ -30,7 +30,7 @@ def classmessages():
             times = randint(stime, etime)
             date_touple = time.localtime(times)
             borndate = time.strftime("%Y-%m-%d", date_touple)
-            msgs.append([names[0], gender, borndate, names[1], names[2]])
+            msgs.append({"class" + str(schoolclasses): [names[0], gender, borndate, names[1], names[2]]})
     return msgs
 
 # classes read
